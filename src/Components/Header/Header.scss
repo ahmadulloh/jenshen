@@ -1,13 +1,15 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 20px;
   position: fixed;
-  top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.068);
+  height: 10rem;
+  padding: 40px 50px;
+  z-index: 9999;
   &-right {
     a {
       letter-spacing: 1.28px;
@@ -42,8 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 10px;
-    width: 100%;
+    padding-top: 40px;
     &-right {
       a {
         letter-spacing: 1.28px;
@@ -81,9 +82,10 @@
     justify-content: space-between;
     padding-top: 40px;
     padding: 20px 10px;
+    height: 5rem !important;
     .header-right2 .offcanvas button {
-        box-shadow: 0 0 15px rgb(224, 224, 224);
-        color: #000;
+      box-shadow: 0 0 15px rgb(224, 224, 224);
+      color: #000;
     }
     &-right {
       display: none;
@@ -119,13 +121,12 @@
         background-color: #990e1e;
         width: 80%;
         select {
-            background-color: transparent;
-            border: none;
-            outline: none;
-            background:#990e1e ;
-            color: #ffffff;
-           
-          }
+          background-color: transparent;
+          border: none;
+          outline: none;
+          background: #990e1e;
+          color: #ffffff;
+        }
         h5 {
           color: white;
         }
@@ -147,7 +148,8 @@
           font-size: 25px;
         }
       }
-      .btn-check:focus+.btn-primary, .btn-primary:focus  {
+      .btn-check:focus + .btn-primary,
+      .btn-primary:focus {
         color: #fff;
         background-color: transparent !important;
         border-color: transparent !important;

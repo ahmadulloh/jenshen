@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Container from "../Container/Container";
 import "./Header.scss";
 import Button from "@mui/material/Button";
@@ -17,25 +17,52 @@ function Header() {
     setLan(e.target.value);
   };
 
+  //
+  const [navSize, setnavSize] = useState("10rem");
+  const [navColor, setnavColor] = useState("transparent");
+  const [navWhite, setnavWhite] = useState("#000");
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setnavColor("#990e1e") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+    window.scrollY > 10 ? setnavWhite("#fff") : setnavWhite("#000");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
   return (
     <div>
       <Container>
         <div
           className="header"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
+          style={{
+            backgroundColor: navColor,
+            height: navSize,
+            transition: "all 1s",
+          }}
         >
           <div className="header-left">
             <img src={logo} alt="logo" />
           </div>
           <div className="header-right">
             {Nav?.map((e) => (
-              <a key={e.id} href={e.href}>
+              <a
+                key={e.id}
+                href={e.href}
+                style={{ color: navWhite, transition: "all 1s" }}
+              >
                 {e[`nav_${language}`]}
               </a>
             ))}
-            <select onChange={changer} name="language" id="language">
+            <select
+              onChange={changer}
+              name="language"
+              id="language"
+              style={{ color: navWhite, transition: "all 1s" }}
+            >
               <option value="uz">UZ</option>
               <option value="ru">RU</option>
               <option value="en">EN</option>
@@ -53,17 +80,33 @@ function Header() {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
-            <button className="btn btn-primary" type="button">
+            <button
+              className="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
               <i className="bi bi-list"></i>
             </button>
-            <div className="offcanvas offcanvas-end">
+            <div
+              className="offcanvas offcanvas-end"
+              data-bs-scroll="true"
+              tabIndex="-1"
+              id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel"
+            >
               <div className="offcanvas-header">
                 <h5
                   className="offcanvas-title"
                   id="offcanvasWithBothOptionsLabel"
                 >
-                  {" "}
-                  <select onChange={changer} name="language" id="language">
+                  <select
+                    onChange={changer}
+                    name="language"
+                    id="language"
+                    style={{ color: navWhite, transition: "all 1s" }}
+                  >
                     <option value="uz">UZ</option>
                     <option value="ru">RU</option>
                     <option value="en">EN</option>

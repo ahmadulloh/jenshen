@@ -10,12 +10,14 @@ import Mahsulot from '../Mahsulot/Mahsulot'
 import MahsulotAbout from '../MahsulotAbout/MahsulotAbout'
 import Question from '../Question/Question'
 
+
 import './Home.scss'
 function Home() {
+  
   return (
     <div className='home' id='home'>
       <div className="heroo">
-        <Header/>
+        <Header />
         <Hero/>
       </div>
       <Buyurtma/>

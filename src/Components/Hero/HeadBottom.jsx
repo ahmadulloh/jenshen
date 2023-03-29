@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 
 import headBottom from '../../Assets/Images/headerBottom.png'
 import { Context } from '../../Context/Context';
-import { Btn, Slider } from '../../Data/data';
+import { Btn, Slider  } from '../../Data/data';
 
 function HeadBottom() {
     const {lan} = useContext(Context)
@@ -13,7 +13,7 @@ function HeadBottom() {
     <div>
         <Container>
             <div className="head">
-                <div className="head-left" data-aos="zoom-out-right">
+                <div className="head-left" >
                     {
                         Slider?.map((e)=> (
                             <div key={e.id}>
