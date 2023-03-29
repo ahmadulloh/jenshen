@@ -20,7 +20,12 @@ function Header() {
   return (
     <div>
       <Container>
-        <div className="header">
+        <div
+          className="header"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div className="header-left">
             <img src={logo} alt="logo" />
           </div>
@@ -48,22 +53,10 @@ function Header() {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
-            <button
-              className="btn btn-primary"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions"
-              aria-controls="offcanvasWithBothOptions"
-            >
+            <button className="btn btn-primary" type="button">
               <i className="bi bi-list"></i>
             </button>
-            <div
-              className="offcanvas offcanvas-end"
-              data-bs-scroll="true"
-              tabIndex="-1"
-              id="offcanvasWithBothOptions"
-              aria-labelledby="offcanvasWithBothOptionsLabel"
-            >
+            <div className="offcanvas offcanvas-end">
               <div className="offcanvas-header">
                 <h5
                   className="offcanvas-title"

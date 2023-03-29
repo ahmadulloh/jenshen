@@ -7,7 +7,7 @@ function Question() {
   return (
     <div className='questions'>
       <div className="questions__container container">
-        <div className="questions__container__title">
+        <div className="questions__container__title" >
           {
             ShouldDrink?.map((e) => (
               <h2 key={e.id}>{e[`title_${lan}`]}</h2>
@@ -15,7 +15,7 @@ function Question() {
           }
         </div>
         <div className="questions__container__items">
-        <ul className="questions__container__items__left">
+        <ul className="questions__container__items__left" data-aos="zoom-in">
           {
             ShouldDrink?.map((e)=>(
               e.cause?.map((d )=>(
@@ -24,7 +24,7 @@ function Question() {
             ))
           }
         </ul>
-        <ul className="questions__container__items__right">
+        <ul className="questions__container__items__right" data-aos="zoom-in">
           {
             ShouldDrink?.map((e)=>(
               e.cause2?.map((d )=>(

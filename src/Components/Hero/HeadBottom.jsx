@@ -13,7 +13,7 @@ function HeadBottom() {
     <div>
         <Container>
             <div className="head">
-                <div className="head-left">
+                <div className="head-left" data-aos="zoom-out-right">
                     {
                         Slider?.map((e)=> (
                             <div key={e.id}>

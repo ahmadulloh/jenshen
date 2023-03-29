@@ -6,9 +6,9 @@ import { Context } from '../../Context/Context'
 function About() {
   const { lan } = React.useContext(Context)
   return (
-    <div className='about' id='about'>
+    <div className='about' id='about' >
         <div className="about__container container">
-          <div className="about__container__left">
+          <div className="about__container__left" data-aos="fade-right">
             {
               AboutCompany?.map((e)=>(
                 <h2 key={e.id}>{e[`title_${lan}`]}</h2>

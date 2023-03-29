@@ -8,10 +8,10 @@ import './Buyurtma.scss'
 function Buyurtma() {
   const { lan } = React.useContext(Context)
   return (
-    <div className='buyurtma' id='buyurtma'>
+    <div className='buyurtma' id='buyurtma' >
       <div className="buyurtma__container container">
         <div className="buyurtma__container__left">
-          <form action="#">
+          <form action="#" >
             {
               Orders?.map((e)=>(
                 <h2 key={e.id}>{e[`title_${lan}`]}</h2>
@@ -23,9 +23,10 @@ function Buyurtma() {
               ))
             }
             <TextField
-              id="outlined-basic"
+              id="name"
               label="Ismingiz"
               variant="outlined"
+              type="text" name="name"
             />
             <TextField
               label="Raqamingiz"

@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0;
+    max-width: 1400px;
+    padding: 0 0 100px 0;
     &__left {
       margin-top: 89px;
       &__btn {
@@ -172,21 +173,10 @@
         }
       }
     }
-    @keyframes anime {
-      0% {
-        transform: rotate(-10deg);
-      }
-      50% {
-        transform: rotate(5deg);
-      }
-      100% {
-        transform: rotate(-10deg);
-      }
-    }
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   .buyurtma {
     &__container {
       margin: 0 auto;
@@ -258,11 +248,7 @@
       &__right {
         position: relative;
         .karnay {
-          z-index: 999;
-          position: absolute;
-          left: 80px;
-          top: 120px;
-          max-width: 500px;
+         display: none;
         }
         ul {
           position: relative;
@@ -359,17 +345,6 @@
               }
             }
           }
-        }
-      }
-      @keyframes anime {
-        0% {
-          transform: rotate(-10deg);
-        }
-        50% {
-          transform: rotate(5deg);
-        }
-        100% {
-          transform: rotate(-10deg);
         }
       }
     }
@@ -482,6 +457,24 @@
     }
     .karnay {
       display: none;
+    }
+    .buyurtma__container__right ul {
+      h3 {
+        padding: 3px 10px;
+        font-size: 55px;
+      }
+      h2 {
+        font-family: "Bitter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 71.4088px;
+        line-height: 86px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        text-align: center;
+        padding: 0 25px;
+      }
     }
     ul {
       width: 100%;

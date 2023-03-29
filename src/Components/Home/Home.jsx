@@ -19,13 +19,13 @@ function Home() {
         <Hero/>
       </div>
       <Buyurtma/>
-      {/* <Mahsulot/>
+      <Mahsulot/>
       <MahsulotAbout/>
       <About/>
       <Question/>
       <HowUse/>
       <Faktlar/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }

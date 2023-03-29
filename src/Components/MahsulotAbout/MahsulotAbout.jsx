@@ -12,7 +12,7 @@ function MahsulotAbout() {
     return (
         <div className='MahsulotAbout'>
             <div className="MahsulotAbout__container container">
-                <div data-aos="fade-right" className="MahsulotAbout__container__left" >
+                <div  className="MahsulotAbout__container__left" >
                    {
                     ProductInfo?.map((e)=>(
                         e.id == 1 ? <p className='text1' key={e.id}>{e[`text_${lan}`]}</p> : false
@@ -20,15 +20,15 @@ function MahsulotAbout() {
                    }
 
                 </div>
-                <div data-aos="fade-left" className="MahsulotAbout__container__right">
+                <div  className="MahsulotAbout__container__right">
                     <img src={jenshen1} alt="" />
                 </div>
             </div>
             <div className="MahsulotAbout__container2 container">
-                <div data-aos="fade-right" className="MahsulotAbout__container__left">
+                <div className="MahsulotAbout__container__left">
                     <img src={jenshen2} alt="" />
                 </div>
-                <div data-aos="fade-left" className="MahsulotAbout__container2__right">
+                <div className="MahsulotAbout__container2__right">
                     {
                         ProductInfo?.map((e)=>(
                             e.id == 2 ? <p key={e.id} className='text2'>{e[`text_${lan}`]}</p> : false
@@ -36,7 +36,7 @@ function MahsulotAbout() {
                     }
                 </div>
             </div>
-            <div data-aos="fade-up" className="MahsulotAbout__container3 container">
+            <div  className="MahsulotAbout__container3 container">
                 <div className="MahsulotAbout__container3__left">
                     {
                         ProductInfo?.map((e)=>(
