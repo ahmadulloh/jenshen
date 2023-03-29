@@ -1,0 +1,191 @@
+.head {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 180px;
+  padding-bottom: 280px;
+  overflow: hidden;
+  &-left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // animation: topLeft 3s normal;
+    // transition: 3s ease all;
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      color: white;
+    }
+    b {
+      max-width: 576px;
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 79px;
+      color: white;
+    }
+    button {
+      background: #167526;
+      border-radius: 8px;
+      width: 245px;
+      height: 60px;
+      margin-top: 40px;
+      a {
+        color: white;
+        margin: 0 auto;
+        text-decoration: none;
+      }
+    }
+  }
+  &-right {
+    float: right;
+    width: 100%;
+    img {
+      width: 100%;
+      animation: topBottom 3s normal;
+      transition: 3s ease all;
+      // &:hover{
+      //     animation: topBottom 3s infinite;
+      //     transition: 3s ease all;
+      //     animation-play-state: running;
+      // }
+    }
+  }
+}
+
+@keyframes topBottom {
+  from {
+    transform: translateX(300px);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes topTop {
+  from {
+    transform: translateY(-300px);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .head {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 50px 10px;
+    overflow: hidden;
+    &-left {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      // animation: topLeft 3s normal;
+      // transition: 3s ease all;
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: white;
+      }
+      b {
+        max-width: 576px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 79px;
+        color: white;
+      }
+      button {
+        background: #167526;
+        border-radius: 8px;
+        width: 205px;
+        height: 50px;
+        margin-top: 40px;
+        a {
+          color: white;
+          margin: 0 auto;
+          text-decoration: none;
+        }
+      }
+    }
+    &-right {
+      float: right;
+      width: 100%;
+      img {
+        width: 100%;
+        animation: topBottom 3s ease-in;
+        transition: 3s ease all;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-left img {
+    width: 132.1px;
+    height: 38.68px;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 10px;
+    margin: 0;
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18.2633px;
+        line-height: 24px;
+      }
+      b {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36.5266px;
+        line-height: 48px;
+      }
+      button {
+        background: #167526;
+        border-radius: 8px;
+        min-width: 326px;
+        height: 60px;
+
+        a {
+          color: white;
+          margin: 0 auto;
+          text-decoration: none;
+        }
+      }
+    }
+    &-right {
+      float: right;
+      width: 100%;
+      img {
+        width: 100%;
+        animation: topTop 3s normal;
+        transition: 3s ease all;
+      }
+    }
+  }
+}
