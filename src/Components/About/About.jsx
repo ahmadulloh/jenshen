@@ -8,7 +8,7 @@ function About() {
   return (
     <div className='about' id='about' >
         <div className="about__container container">
-          <div className="about__container__left" data-aos="fade-right">
+          <div className="about__container__left" data-aos="fade-right" >
             {
               AboutCompany?.map((e)=>(
                 <h2 key={e.id}>{e[`title_${lan}`]}</h2>
@@ -20,7 +20,7 @@ function About() {
               ))
             }
           </div>
-          <div className="about__container__right">
+          <div className="about__container__right" >
             <img src={uy} alt="" />
           </div>
         </div>

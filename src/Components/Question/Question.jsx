@@ -15,7 +15,7 @@ function Question() {
           }
         </div>
         <div className="questions__container__items">
-        <ul className="questions__container__items__left" data-aos="zoom-in">
+        <ul className="questions__container__items__left" >
           {
             ShouldDrink?.map((e)=>(
               e.cause?.map((d )=>(
@@ -24,7 +24,7 @@ function Question() {
             ))
           }
         </ul>
-        <ul className="questions__container__items__right" data-aos="zoom-in">
+        <ul className="questions__container__items__right" >
           {
             ShouldDrink?.map((e)=>(
               e.cause2?.map((d )=>(

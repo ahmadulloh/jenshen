@@ -14,7 +14,7 @@ function HowUse() {
                     ))
                 }
             </div>
-            <div className="howUse__container__text" data-aos="fade-left">
+            <div className="howUse__container__text" data-aos="fade-right" >
                 {
                     Question?.map((e)=>(
                         <p key={e.id}>{e[`text_${lan}`]}</p>

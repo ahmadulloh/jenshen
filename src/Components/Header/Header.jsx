@@ -123,8 +123,8 @@ function Header() {
               </div>
               <div className="offcanvas-body">
                 <a href="#about">Kompaniya haqida</a>
-                <a href="#fakts">Faktlar</a>
-                <a href="#product">Mahsulot</a>
+                <a href="#faktlar">Faktlar</a>
+                <a href="#mahsulot">Mahsulot</a>
               </div>
             </div>
           </div>

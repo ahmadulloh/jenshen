@@ -12,7 +12,7 @@ function MahsulotAbout() {
     return (
         <div className='MahsulotAbout'>
             <div className="MahsulotAbout__container container">
-                <div  className="MahsulotAbout__container__left" >
+                <div  className="MahsulotAbout__container__left" data-aos="fade-right" >
                    {
                     ProductInfo?.map((e)=>(
                         e.id == 1 ? <p className='text1' key={e.id}>{e[`text_${lan}`]}</p> : false
@@ -28,7 +28,7 @@ function MahsulotAbout() {
                 <div className="MahsulotAbout__container__left">
                     <img src={jenshen2} alt="" />
                 </div>
-                <div className="MahsulotAbout__container2__right">
+                <div className="MahsulotAbout__container2__right" data-aos="fade-right">
                     {
                         ProductInfo?.map((e)=>(
                             e.id == 2 ? <p key={e.id} className='text2'>{e[`text_${lan}`]}</p> : false
@@ -37,14 +37,14 @@ function MahsulotAbout() {
                 </div>
             </div>
             <div  className="MahsulotAbout__container3 container">
-                <div className="MahsulotAbout__container3__left">
+                <div className="MahsulotAbout__container3__left" data-aos="fade-right">
                     {
                         ProductInfo?.map((e)=>(
                             e.id == 3 ? <p key={e.id}>{e[`text_${lan}`]}</p> : false
                         ))
                     }
                 </div>
-                <div className="MahsulotAbout__container3__right">
+                <div className="MahsulotAbout__container3__right" >
                     <img src={jenshen3} alt="" />
                 </div>
             </div>

@@ -5,25 +5,21 @@ function Mahsulot() {
   return (
     <div className="mahsulot" id="mahsulot">
       <div className="mahsulot__container container">
-        <div className="mahsulot__container__left">
+        <div className="mahsulot__container__left" data-aos="fade-right">
           <img
             className="dori"
             src={jenshen}
             alt=""
-            data-aos="fade-up"
-            data-aos-duration="3000"
           />
           <span>
             <h5>Oddiy jenshen</h5> <h3>1 199 000</h3>
           </span>
         </div>
-        <div className="mahsulot__container__right">
+        <div className="mahsulot__container__right" data-aos="fade-right" >
           <img
             className="dori"
             src={jenshen}
             alt=""
-            data-aos="fade-up"
-            data-aos-duration="3000"
           />
           <span>
             <h5>Qizil jenshen</h5> <h3>1 199 000</h3>
