@@ -90,6 +90,7 @@
         color: #ffffff;
         background-color: #89363d;
         border-radius: 6px;
+        border: none;
         label {
           color: #ffffff;
         }
@@ -107,7 +108,7 @@
       }
       .btn1 {
         margin-top: 30px;
-        background: #b04c08;
+        background: #167526;
         box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.09);
         border-radius: 5px;
         height: 52px;
@@ -115,7 +116,7 @@
         border: none;
         color: #ffffff;
         &:active {
-          background: #b86026;
+          background: #136020;
         }
       }
     }

@@ -35,6 +35,13 @@
       border: none;
       outline: none;
       margin-right: 26px;
+      cursor: pointer;
+      option{
+        background: #760612;
+        color: #fff;
+        padding: 5px 20px;
+        text-align: center;
+      }
     }
   }
 }
@@ -69,7 +76,14 @@
         background-color: transparent;
         border: none;
         outline: none;
-        margin-right: 16px;
+        margin-right: 26px;
+        cursor: pointer;
+        option{
+          background: #760612;
+          color: #fff;
+          padding: 5px 20px;
+          text-align: center;
+        }
       }
     }
   }
@@ -112,7 +126,14 @@
         background-color: transparent;
         border: none;
         outline: none;
-        margin-right: 16px;
+        margin-right: 26px;
+        cursor: pointer;
+        option{
+          background: #760612;
+          color: #fff;
+          padding: 5px 20px;
+          text-align: center;
+        }
       }
     }
     &-right2 {

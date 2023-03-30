@@ -22,7 +22,7 @@ function Header() {
   const [navColor, setnavColor] = useState("transparent");
   const [navWhite, setnavWhite] = useState("#000");
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#990e1e") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavColor("#760612") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
     window.scrollY > 10 ? setnavWhite("#fff") : setnavWhite("#000");
   };
@@ -45,7 +45,9 @@ function Header() {
           }}
         >
           <div className="header-left">
-            <img src={logo} alt="logo" />
+            <a href="#">
+              <img src={logo} alt="logo" />
+            </a>
           </div>
           <div className="header-right">
             {Nav?.map((e) => (
