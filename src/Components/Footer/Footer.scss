@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 612px;
   padding-top: 256px;
   padding-bottom: 117px;
   &__container {
@@ -130,7 +129,8 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    padding: 120px 10px;
+    background: #760612;
+    padding: 7px 10px 0 10px;
     &__container {
       display: flex;
       flex-direction: column;
